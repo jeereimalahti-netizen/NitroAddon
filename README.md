@@ -12,8 +12,20 @@ cd MeteorAddon
 ./gradlew.bat build
 ```
 
-Install
-- Drop build\libs\MeteorAddon-0.1.0.jar into .minecraft\mods (Fabric + Meteor installed)
-- Launch game, open ClickGUI (Right Shift), check the Nitro category for ExampleModule
-- Test the command: `.hello yourname`
+Artifact
+- build\libs\MeteorAddon-0.1.0.jar (use this one, not -sources or -dev)
+
+Install (Meteor Client)
+- Put the JAR into .minecraft\mods (Fabric + Meteor installed)
+- Launch game (1.21.4), open ClickGUI (Right Shift)
+- Category: NITRO → modules: ExampleModule, ChunkFinder
+
+Release
+- Create a GitHub Release and upload build\libs\MeteorAddon-0.1.0.jar
+  - Tag: v0.1.0
+  - Title: NitroAddon v0.1.0 (MC 1.21.4)
+
+Notes
+- Entry point: com.nitro.meteor.TemplateAddon (fabric.mod.json → "meteor")
+- If modules don’t appear, make sure versions match and Meteor loads addons.
 
