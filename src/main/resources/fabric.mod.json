@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "nitrometeor",
+  "version": "${version}",
+  "name": "Nitro Meteor Addon",
+  "description": "Example Meteor addon for 1.21.4.",
+  "authors": ["Nitro"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "meteor-client": ["com.nitro.meteor.TemplateAddon"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21.4",
+    "meteor-client": "*"
+  }
+}
+
